@@ -22,6 +22,7 @@ class DashManifest {
 
                 var media_path = path.join(stream_path, streamType)
                 const media_tree = dir_tree(media_path);
+                if(!media_tree) return
 
                 for(var i=0; i<media_tree.children.length; i++) {
                     var mime_dir = media_tree.children[i]
