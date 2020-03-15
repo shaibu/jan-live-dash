@@ -3,7 +3,7 @@ var request = require('supertest');
 
 describe('loading express', function () {
     var server;
-    var test_stream_id = 'IWLAZ2OA';
+    var test_stream_id = 'ABCD1234';
 
     beforeEach(function () {
         server = require('../server');
