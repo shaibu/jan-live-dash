@@ -4,7 +4,8 @@
         "directory-tree": "^2.2.4",
         "express": "^4.17.1",
         "express-fileupload": "^1.1.6",
-        "xmlbuilder": "^14.0.0"
+        "xmlbuilder": "^14.0.0",
+        "minimist": ">=1.2.2"
     },
     "scripts": {
         "start": "nodemon server.js",
