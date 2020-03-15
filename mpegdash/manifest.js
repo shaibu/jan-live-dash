@@ -41,7 +41,6 @@ class DashManifest {
                         if(content_files.length) {
                             var codec = content_files[0].name.substring(
                                 content_files[0].name.indexOf('.') + 1);
-                            var start_number = 
                             var media_spec = {
                                 mime_type: mimetype,
                                 bitrate: specs[0],
