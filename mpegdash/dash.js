@@ -9,6 +9,8 @@ class DashServer {
     constructor(app, config) {
         this.app = app
         this.config = config
+        // Get real path
+        this.config.data_path = path.resolve(this.config.data_path)
 
         this.init()
     }
@@ -52,7 +54,6 @@ class DashServer {
                 req.params.streamType, req.params.mimeType, req.params.specId)
             var file_path = path.join(dest_dir,
                 req.params.segmentId + '.' + req.params.format)
-            console.log(file_path)
 
             this.waitForFile(file_path, found => {
                 if(found) res.sendFile(file_path)
