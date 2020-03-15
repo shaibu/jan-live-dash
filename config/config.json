@@ -1,0 +1,14 @@
+{
+  "development": {
+    "base_url": "http://127.0.0.1:3000",
+    "data_path": "/Users/shaibu/workspace/opensource/jan-live-dash/jan-live-dash/data"
+  },
+  "test": {
+    "base_url": "http://127.0.0.1:3000",
+    "data_path": "./data"
+  },
+  "production": {
+    "base_url": "http://live.classi4u.com",
+    "data_path": "./data"
+  }
+}

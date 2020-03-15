@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jan MPEG DASH Live Conference</title>
+<link href="//stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" crossorigin="anonymous">
+<link href="//vjs.zencdn.net/5.9/video-js.css" rel="stylesheet">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="container p-3 text-center">
+		<h2>MPEG-DASH Live Conference Demo</h2>
+	</div>
+	<div class="container conference-area">
+		<div class="card mb-2">
+			<div class="d-flex">
+				<div class="p-2"><video id="my-video" width="160" height="120"></video></div>
+				<div class="p-2">
+					<a id="start-conf-btn" type="button" class="btn btn-primary mt-5" href="#play">Start Streaming <span class="fa fa-play"></span></a>
+					<div class="conf-started d-none">
+						<div class="mt-2"><label>My Stream Id:</label></div>
+						<div class="mb-2">
+							<input id="local-stream-id" type="text" value="" readonly="true" />
+						</div>
+						<div class="mt-2"><a id="end-conf-btn" type="button" class="btn btn-secondary btn-small" href="#play">End Streaming <span class="fa fa-stop"></span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="card p-2 text-center">
+			<div class="d-flex">
+				<div class="p-2">
+					<video id="dash_video_1" class="video-js vjs-default-skin" controls preload="none" width="320" height="240" poster="img/live.png" data-setup="{}"></video>
+				</div>
+				<div class="p-2 pl-3 text-left">
+					<div class="mt-4"><label>Stream Id:</label></div>
+					<div class="mb-2">
+						<input id="remote-stream-id" type="text" value="" placeholder="Enter Stream Id" />
+					</div>
+					<div class="mt-2"><a id="add-stream-btn" type="button" class="btn btn-primary btn-small" href="#play">Play Stream <span class="fa fa-stop"></span></a></div>
+				</div>
+			</div>
+		</div>
+	<div>
+<script src="//vjs.zencdn.net/5.9/video.min.js"></script>
+<script src="//cdn.dashjs.org/latest/dash.all.min.js"></script>
+<script src="//npmcdn.com/videojs-contrib-dash@^2.4.0/dist/videojs-dash.js"></script>
+
+<script src="js/media-source.js"></script>
+<script src="js/conference.js"></script>
+
+</body>
+</html>
