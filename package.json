@@ -1,8 +1,8 @@
 {
     "dependencies": {
-        "body-parser": "^1.19.0",
+        "body-parser": "^1.20.1",
         "directory-tree": "^2.2.4",
-        "express": "^4.17.1",
+        "express": "^4.18.2",
         "express-fileupload": "^1.1.6",
         "xmlbuilder": "^14.0.0",
         "minimist": ">=1.2.3"
